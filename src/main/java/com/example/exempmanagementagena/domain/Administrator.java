@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.exempmanagementagena.domain;
 
 public class Administrator {
     private Integer id;
