@@ -29,7 +29,7 @@ public class AdministratorRepository {
     };
 
     public void insert(Administrator administrator) {
-        String insertSql = "INSERT INTO administrators(id, name, mail_address, password) VALUES(:id, :name, :mailAddress, :password)";
+        String insertSql = "INSERT INTO administrators(name, mail_address, password) VALUES(:name, :mailAddress, :password)";
         SqlParameterSource param = new BeanPropertySqlParameterSource(administrator);
 
         template.update(insertSql, param);
